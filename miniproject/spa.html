@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="rest.css">
+    <link rel="stylesheet" href="rest.js">
+</head>
+<body>
+    <header>
+        <h1>Spa</h1>
+    <h5>50% Discounnt For Boys:--</h5> 
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        
+        <div class="container"><center><br> <h2>Spa For You</h2></center>
+            <form id="bookingForm">
+                <h3>Book a Spa Time Slot</h3>
+            
+                <label for="time">Select Time:</label>
+                
+                <select id="time" name="time">
+                    <option value="choose">Choose-Time</option>
+                    <option value="00:00">12:00 AM - 01:00 AM</option>
+                    <option value="01:00">1:00 AM-02:00 AM</option>
+                    <option value="02:00">02:00AM-03:00 AM</option>
+                
+                    <option value="12:00">12:00PM-01:00PM</option>
+                    <option value="02:00">02:00PM-03:00PM</option>
+                    <option value="22:00">10:00 PM- 11:00PM</option>
+                    <option value="23:00">11:00 PM-12:00PM</option>
+                </select>
+            
+                <button type="submit">Book Now</button>
+            <label for="search"><input type="datetime" name="" id="">
+                <button>Check</button></label>
+            </form>
+        </div>
+       
+             
+            <head>
+               
+                <title>Restaurant Time Slot Booking</title>
+              
+
+    <section id="contact">
+        <h2>Contact Us:-</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+              
+            <button type="submit">Submit</button><br><br><br>
+            <br><br>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Restaurant</p>
+    </footer>
+</body>
+</html>

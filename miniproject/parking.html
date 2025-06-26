@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Slot Booking</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: white;
+        }
+
+        .slot-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .time-slot {
+            background-color: #ffd700;
+            color: #333;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .time-slot:hover {
+            background-color: #ffcc00;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Parking Slot Booking</h1>
+        <p>Welcome to our online parking reservation system!</p>
+    </header>
+
+    <section>
+        <h2>Book a Parking Slot</h2>
+
+        <div class="slot-container">
+         
+            <div class="time-slot" onclick="selectSlot(this, 'KNP A', '9:00 AM')">KNP A(2min away from you ) - 9:00 AM</div><br>
+            <div class="time-slot" onclick="selectSlot(this, 'KNP B', '10:00 AM')">KNP B(5min away from you) - 10:00 AM</div>
+            <div class="time-slot" onclick="selectSlot(this, 'GRDV C', '11:00 AM')">GRDV C(15min away from you) - 11:00 AM</div>
+            <div class="time-slot" onclick="selectSlot(this, 'RWTPR D', '12:00 PM')">RWTPR D(10min away from you) - 12:00 PM</div>
+            <div class="time-slot" onclick="selectSlot(this, 'MNDNA E', '1:00 PM')">MNDNA E(1MIN away from you) - 1:00 PM</div>
+            <div class="time-slot" onclick="selectSlot(this, 'LCKNW F', '2:00 PM')">Lcknw F(2hr away from you) - 2:00 PM</div>
+           
+        </div>
+
+        
+        <p><strong>Selected Slot:</strong> <span id="selectedSlot">None</span></p>
+
+        <button onclick="bookSlot()">Book Now</button>
+    </section>
+    <script>
+        function selectSlot(slot, slotName, time) {
+            
+            document.getElementById('selectedSlot').innerText = `${slotName} at ${time}`;
+        }
+
+        function bookSlot() {
+         
+            alert('Parking slot booked for ' + document.getElementById('selectedSlot').innerText);
+        }
+    </script>
+  
+
+</body>
+</html>
+

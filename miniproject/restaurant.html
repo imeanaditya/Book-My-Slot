@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="rest.css">
+    <link rel="stylesheet" href="rest.js">
+</head>
+<body>
+    <header>
+        <h1>My Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <select>
+                    <option value="0">Location</option> 
+                    <option value="1">Patna</option>
+                    <option value="2">Kanpur</option>
+                    <option value="3">Lucknow</option>
+                    <option value="4">Hauz Khash</option>
+                    <option value="5">MayurVihar</option>
+                    <option value="6">Ludhiana</option>
+                    <option value="7">Chandigarh</option>
+                    <option value="8">Gurgaon</option>
+                    <option value="9">Noida</option>
+                    <option value="10">Mumbai</option>" id="">
+                </select>
+                </label><br></select>
+
+
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        
+        <div class="container"><center><br> <h2>Welcome to My Restaurant</h2></center>
+            <form id="bookingForm">
+                <h2>Book a Restaurant Time Slot</h2>
+            
+                <label for="time">Select Time:</label>
+                
+                <select id="time" name="time">
+                    <option value="choose">Choose-Time</option>
+                    <option value="00:00">12:00 AM - 01:00 AM</option>
+                    <option value="01:00">1:00 AM-02:00 AM</option>
+                    <option value="02:00">02:00AM-03:00 AM</option>
+                
+                    <option value="12:00">12:00PM-01:00PM</option>
+                    <option value="02:00">02:00PM-03:00PM</option>
+                    <option value="22:00">10:00 PM- 11:00PM</option>
+                    <option value="23:00">11:00 PM-12:00PM</option>
+                </select>
+            
+             <button type="submit">Book Now</button>
+            <label for="search"><input type="datetime" name="" id="">
+                <button>Check</button></label>
+            </form>
+        </div>
+       
+             
+            <head>
+               
+                <title>Restaurant Time Slot Booking</title>
+              
+
+    <section id="contact">
+        <h2>Contact Us:-</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+              
+            <button type="submit">Submit</button><br><br><br>
+            <br><br>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Restaurant</p>
+    </footer>
+</body>
+</html>

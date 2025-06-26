@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie and Salon Booking</title>
+    <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: changeBackground 10s infinite alternate;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-color: #ff5733; 
+    }
+    50% {
+        background-color: #33aaff;
+    }
+    100% {
+        background-color: #ff5733;
+    }
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        #movieBooking, #salonBooking{
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        #Restaurant{
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button{
+            color: white;
+            background-color: rgb(148, 12, 12);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Movie, Salon and Restaurant Booking</h1>
+    </header>
+
+    <main>
+        
+        <section id="movieBooking">
+            <h2>Movie Booking</h2>
+            <p>Choose a movie and book your tickets:</p>
+            <label for="movieSelection">Select a Movie:</label>
+            
+            <select id="movieSelection">
+                <option value="Choose">Choose Moveis</option>
+                <option value="movie1">Kabir Singh</option>
+                <option value="movie2">Animal</option>
+                <option value="Movei3">Golmaal</option>
+                <option value="Movei4">Jab We Meet</option>
+            
+                
+            </select>
+
+            <select id="movieSelection">
+                <label for="Theater">Select</label>
+                <option value="Choose">Choose Moveis</option>
+                <option value="movie1">Kabir Singh</option>
+                <option value="movie2">Animal</option>
+                <option value="Movei3">Golmaal</option>
+                <option value="Movei4">Jab We Meet</option>
+            
+                
+            </select>
+            <button onclick="bookMovie()">Book Now</button>
+        </section>
+        <section id="salonBooking">
+            <h2>Salon Booking</h2>
+            <p>Book an appointment at our salon:</p>
+
+            <label for="salonService">Select a Salon:</label>
+            <select id="salonService">
+                <option value="salon">Choose salon</option>
+                <option value="salon">Jawed Habibb Hair And Beauty</option>
+                <option value="salon">Hill And Truefit</option>
+                <option value="salon">Lakme Salon</option>
+                <option value="salon">Shahnaz Husain Salon</option>
+                <option value="salon">Looks Salon</option>
+                <option value="salon">Green Trends</option>
+                <option value="Salon">L’oreal Professionnel Salons</option>
+                <label for="Choose Salon">Select A Salon:</label>
+               
+
+            </select>
+           
+            <label for="salonService">Select a Service:</label>
+            <select id="salonService">
+                <option value="haircut">Haircut</option>
+                <option value="manicure">Manicure</option>
+                <label for="Choose Salon">Select A Salon:</label>
+               
+
+            </select>
+           
+            <button onclick="bookSalon()">Book Now</button>
+        </section>
+
+        <section id="Restaurant">
+            <h2>Restaurant Booking</h2>
+            <p>Book an  Table:</p>
+            <label for="RestarantService">Select a Service:</label> 
+            <select id="RestaurantService">
+                <option value="Booking">Table</option>
+                <option value="manicure">Floor</option>
+            
+            </select>
+            <button onclick="bookSalon()">Book Now</button>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Movie and Salon Booking. All rights reserved.
+    </footer>
+
+    <script>
+    // java
+        function bookMovie() {
+    
+            alert('Movie booking functionality is not implemented in this example.');
+        }
+
+        function bookSalon() {
+            /
+            alert('Salon booking functionality is not implemented in this example.');
+        }
+    </script>
+
+</body>
+</html>

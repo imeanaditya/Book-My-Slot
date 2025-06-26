@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cards - Your Booking Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('creative-background.jpg') center/cover no-repeat;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2 {
+            color: #ffd700;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #ffd700;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Booking Website</h1>
+        
+        <h2>Gift Cards</h2>
+    </header>
+
+    <section>
+        <p>Surprise your loved ones with the perfect gift - a memorable experience! Purchase a gift card for our services and let them book their favorite activities at their convenience.</p>
+
+        <form>
+            <label for="amount">Select Gift Card Amount:</label>
+            <input type="number" id="amount" name="amount" min="10" placeholder="Enter amount in USD" required>
+
+            <label for="recipient">Recipient's Name:</label>
+            <input type="text" id="recipient" name="recipient" placeholder="Enter recipient's name" required>
+
+            <label for="email">Recipient's Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter recipient's email" required>
+
+            <button type="submit">Purchase Gift Card</button>
+        </form>
+    </section>
+
+</body>
+</html>

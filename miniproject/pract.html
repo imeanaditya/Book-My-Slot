@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookmySlot</title>
+    <link rel="stylesheet" href="show12.css">
+</head>
+<style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation styles */
+.fnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.fnav img {
+    height: 50px;
+    width: 50px;
+}
+
+.fnav input {
+    width: 300px;
+    padding: 5px;
+}
+
+.fnav button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sec-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+}
+
+.s-left p,
+.s-right p {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+/* Slider styles */
+#slider-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Container styles */
+.container {
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.Card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#bookMySlot {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+</style>
+
+<body>
+    <nav class="fnav">
+
+        <div class="left">
+            <img src="BookmySlot (1).png" alt="logo">
+            <input type="text" placeholder="search for salon, restaurants, parking and more">
+            <button>search</button>
+        </div>
+
+        <div class="right">
+            <label>
+                Location:
+                <select>
+                    <option value="0">India</option>
+                    <option value="1">Patna</option>
+                    <option value="2">Kanpur</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </label><br>
+            <button>sign in</button>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <nav class="sec-nav">
+        <div class="s-left">
+            <a href="salon2.html"><class="*"><P>Salon</P></a>
+            <a href="restaurant.html"><p>Restaurants</p></a>
+            <a href="spa.html"><p>Spa</p></a>
+            <a href="parking.html"><p>Parking</p></a>
+            <a href="hotel.html"><p>Hotel</p></a>
+            <a href="show2.html"><p>Movies</p></a>
+        </div>
+
+        &nbsp;
+
+        <div class="s-right">
+            <a href="list.html"><p>ListYourBooking</p></a>
+            <a href="gift.html"><p>Gift Card</p></a>
+            <a href="help.html"><p>Support</p></a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <hr><hr>
+        <div class="container"></div>
+    </div>
+
+    <div id="slider-container">
+        <div id="slide">
+            <div class="slide"><img src="sm.jpg" alt="Salon Image 1"></div>
+            <div class="slide"><img src="me.jpg" alt="Salon Image 2"></div>
+            <div class="slide"><img src="animmal.jpg" alt="movie img 3"></div>
+            <div class="slide"><img src="food.jpg" alt="food Image 3"></div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">Prev</button>
+        <button class="next" onclick="changeSlide(1)">Next</button>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h2>Recommended salon</h2>
+        <div class="Card">
+            <!-- Add your salon images here -->
+        </div>
+    </div>
+
+    <!-- Add similar container sections for "Recommended Movies," "High Rated Salon," and "High Rated Restaurants" -->
+
+    <div class="container">
+        <h2>Recommended Movies</h2>
+        <div class="Card">
+            <!-- Add your movie images here -->
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>High Rated Salon</h2>
+        <div class="Card">
+            <!-- Add your high rated salon images here -->
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>High Rated Restaurants</h2>
+        <div class="Card">
+            <!-- Add your high rated restaurant images here -->
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Footer Section</h2>
+        <div id="bookMySlot"><br>
+            <h4>
+                Don't miss out on incredible experiences. Book your slot today and secure your place!
+            </h4><br>
+            <a href="booking.html"><button>Book Now</button></a>
+            <br><br>
+        </div>
+        <footer>
+            &copy; 2023 Book My Slot. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+
+</html>
